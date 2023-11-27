@@ -7,6 +7,8 @@ author:
   name: "Pratik Amatya"
   homepage: "https://github.com/PratikAmatya"
 
+canonifyURLs: true
+
 tags:
   - responsive
   - simple
