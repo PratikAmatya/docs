@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Pratik Amatya</title>
+    <link>https://example.org/posts/</link>
+    <description>Recent content in Posts on Pratik Amatya</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Nov 2023 21:18:40 +0545</lastBuildDate><atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Github Actions</title>
+      <link>https://example.org/posts/github-actions/</link>
+      <pubDate>Mon, 27 Nov 2023 21:18:40 +0545</pubDate>
+      
+      <guid>https://example.org/posts/github-actions/</guid>
+      <description>Setup runner in the server As shown in the figure above, you can find the Runners tab in the Action section of your repository settings, if you have the proper access.
+Select the New self-hosted runner
+Select the Server OS (Most probably linux)
+Run in your terminal (Be sure you are connected to your server)
+IMPORTANT : Skip the following step
+# Last step, run it! $ ./run.sh Instead use (This allows the runner service to start in the background)</description>
+    </item>
+    
+    <item>
+      <title>LEMP Stack</title>
+      <link>https://example.org/posts/lemp-stack/</link>
+      <pubDate>Mon, 27 Nov 2023 12:25:32 +0545</pubDate>
+      
+      <guid>https://example.org/posts/lemp-stack/</guid>
+      <description>Set locale In /etc/default/locale, set the following
+sudo nano /etc/default/locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8 Update apt-get $ sudo apt-get update Install Nginx $ sudo apt-get install nginx Try http://ip-address to see if nginx loads properly Install MySQL Server $ sudo apt-get install mysql-server Install PHP Check which version is being installed. The version is required later.
+$ sudo apt-get install php-fpm php-mysql Install phpmyadmin $ sudo apt-get install phpmyadmin Do not select any in the first selection for server as we have already installed Nginx In the second option, SELECT yes You will be asked to set password for the database Simply, add password and select enter Create symlink of phpmyadmin with Symlink = Shortcut</description>
+    </item>
+    
+    <item>
+      <title>SSH Setup</title>
+      <link>https://example.org/ssh-setup/</link>
+      <pubDate>Sun, 26 Nov 2023 23:48:12 +0545</pubDate>
+      
+      <guid>https://example.org/ssh-setup/</guid>
+      <description>Copy the public and private key to the .ssh directory cp ~/[filePath]/id_rsa* ~/.ssh/ Setup config file sudo nano ~/.ssh/config Config file configuration Host acme-server HostName 34.231.213.345 User pratik IdentityFile ~/.ssh/id_rsa SSH to the server ssh acme-server </description>
+    </item>
+    
+  </channel>
+</rss>

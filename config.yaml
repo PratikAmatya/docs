@@ -1,0 +1,98 @@
+baseURL: https://example.org/
+languageCode: en-us
+title: Pratik Amatya
+theme: "PaperMod"
+
+author:
+  name: "Pratik Amatya"
+  homepage: "https://github.com/PratikAmatya"
+
+tags:
+  - responsive
+  - simple
+  - clean
+  - light
+  - dark
+  - blog
+  - minimalist
+  - highlight.js
+  - search
+  - portfolio
+  - resume
+  - personal
+  - developer
+  - designer
+  - freelancer
+  - creative
+  - elegant
+  - modern
+  - full-stack
+  - front-end
+  - back-end
+  - vue
+  - react
+  - node
+  - express
+  - mysql
+  - mongodb
+  - postgresql
+
+params:
+  homeInfoParams:
+    enabled: true
+    Title: "Hi, I am Pratik \U0001F44B"
+    Content: "I am a web application developer proficient in front-end and back-end technologies such as Vue.js, React.js, Node.js, Express.js, and MySQL. I have a keen interest in backend technologies, and I am currently expanding my horizons towards DevOps."
+
+  socialIcons:
+    - name: email
+      url: "mailto:pratikamatya10@gmail.com"
+    - name: github
+      url: "https://github.com/PratikAmatya"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/pratikamatya/"
+    - name: discord
+      url: "https://discord.com/users/857988248823791618"
+    - name: CV
+      url: "https://drive.google.com/file/d/1HX8XyTbrgb3tTY6CkTh9lTEOFsZBYbMG/view?usp=sharing"
+
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  defaultContentOrder: "weight"
+  defaultContentSort: "asc"
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: true
+  showtoc: false
+  tocopen: false
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # is necessary
+
+# languages:
+#   en:
+#     languageName: English
+#     weight: 1
+#     # taxonomies:
+#     #   category: categories
+#     #   tag: tags
+#     #   series: series
+#     menu:
+#       main:
+#         - name: SSH Setup
+#           url: ssh-setup
+#           weight: 5
