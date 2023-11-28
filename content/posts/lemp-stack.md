@@ -23,7 +23,7 @@ LC_ALL=en_US.UTF-8
 ### Update apt-get
 
 ```bash
-$ sudo apt-get update
+sudo apt-get update
 ```
 
 ---
@@ -31,7 +31,7 @@ $ sudo apt-get update
 ### Install Nginx
 
 ```bash
-$ sudo apt-get install nginx
+sudo apt-get install nginx
 ```
 
 #### Try http://ip-address to see if nginx loads properly
@@ -41,7 +41,7 @@ $ sudo apt-get install nginx
 ### Install MySQL Server
 
 ```bash
-$ sudo apt-get install mysql-server
+sudo apt-get install mysql-server
 ```
 
 ---
@@ -51,7 +51,7 @@ $ sudo apt-get install mysql-server
 **Check which version is being installed. The version is required later.**
 
 ```bash
-$ sudo apt-get install php-fpm php-mysql
+sudo apt-get install php-fpm php-mysql
 ```
 
 ---
@@ -59,7 +59,7 @@ $ sudo apt-get install php-fpm php-mysql
 ### Install phpmyadmin
 
 ```bash
-$ sudo apt-get install phpmyadmin
+sudo apt-get install phpmyadmin
 ```
 
 1. Do not select any in the first selection for server as we have already installed Nginx
@@ -74,7 +74,7 @@ $ sudo apt-get install phpmyadmin
 **Symlink = Shortcut**
 
 ```bash
-$ sudo ln -s /usr/share/phpmyadmin /var/www/html
+sudo ln -s /usr/share/phpmyadmin /var/www/html
 ```
 
 ---
