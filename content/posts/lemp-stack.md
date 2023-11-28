@@ -100,6 +100,14 @@ sudo nano /etc/nginx/sites-available/default
  }
 ```
 
+> Add index.php
+
+```bash
+# Add index.php to the list if you are using PHP
+ index index.html index.htm index.nginx-debian.html index.php;
+
+```
+
 ### Test the file configuration
 
 ```bash
