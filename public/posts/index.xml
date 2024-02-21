@@ -2,17 +2,39 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Pratik Amatya</title>
-    <link>https://example.org/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on Pratik Amatya</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Nov 2023 21:18:40 +0545</lastBuildDate><atom:link href="https://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 Dec 2023 15:02:46 +0545</lastBuildDate><atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Docker</title>
+      <link>http://localhost:1313/posts/docker/</link>
+      <pubDate>Sun, 03 Dec 2023 15:02:46 +0545</pubDate>
+      
+      <guid>http://localhost:1313/posts/docker/</guid>
+      <description>Docker A container platform that allows you to build, test &amp;amp; deploy applications quickly
+Dockerfile A set of instructions for creating an image
+Image A packaged application and its dependencies
+Container A running instance of that image executing the application in an isolated environment
+# Pull docker image from DockerHub docker pull IMAGE_NAME:TAG # Run docker image docker run IMAGE_NAME:TAG docker run ubuntu:latest # Runs container in the background docker run -d node:latest # List all the images docker images # List all the running containers docker ps # List containers including the stopped ones docker ps -a # Run and interact with the container docker run -it node # Build the docker image from docker file # .</description>
+    </item>
+    
+    <item>
+      <title>Regex Cheatsheet</title>
+      <link>http://localhost:1313/posts/regex-cheatsheet/</link>
+      <pubDate>Sun, 03 Dec 2023 12:07:25 +0545</pubDate>
+      
+      <guid>http://localhost:1313/posts/regex-cheatsheet/</guid>
+      <description>Regex is used for pattern matching or string matching [abc] a,b or c [^abc] any character except a,b,c [a-z] a to z [A-Z] A to Z [a-zA-Z] a to z, A to Z [0-9] 0 to 9 Quantifiers []? Occurs 0 or 1 times []+ Occurs 1 or more times []* Occurs 0 or more times []{n} Occurs n times []{n,} Occurs n or more times []{y,z} Occurs atleast y times but less than z times Regex Meta Characters \d [0-9] \D [^0-9] \w [a-zA-Z0-9] \W [^\w] \ - tells computer to treat following character as search character.</description>
+    </item>
+    
     <item>
       <title>Github Actions</title>
-      <link>https://example.org/posts/github-actions/</link>
+      <link>http://localhost:1313/posts/github-actions/</link>
       <pubDate>Mon, 27 Nov 2023 21:18:40 +0545</pubDate>
       
-      <guid>https://example.org/posts/github-actions/</guid>
+      <guid>http://localhost:1313/posts/github-actions/</guid>
       <description>Setup runner in the server As shown in the figure above, you can find the Runners tab in the Action section of your repository settings, if you have the proper access.
 Select the New self-hosted runner
 Select the Server OS (Most probably linux)
@@ -23,21 +45,21 @@ IMPORTANT : Skip the following step
     
     <item>
       <title>LEMP Stack</title>
-      <link>https://example.org/posts/lemp-stack/</link>
+      <link>http://localhost:1313/posts/lemp-stack/</link>
       <pubDate>Mon, 27 Nov 2023 12:25:32 +0545</pubDate>
       
-      <guid>https://example.org/posts/lemp-stack/</guid>
+      <guid>http://localhost:1313/posts/lemp-stack/</guid>
       <description>Set locale In /etc/default/locale, set the following
-sudo nano /etc/default/locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8 Update apt-get $ sudo apt-get update Install Nginx $ sudo apt-get install nginx Try http://ip-address to see if nginx loads properly Install MySQL Server $ sudo apt-get install mysql-server Install PHP Check which version is being installed. The version is required later.
-$ sudo apt-get install php-fpm php-mysql Install phpmyadmin $ sudo apt-get install phpmyadmin Do not select any in the first selection for server as we have already installed Nginx In the second option, SELECT yes You will be asked to set password for the database Simply, add password and select enter Create symlink of phpmyadmin with Symlink = Shortcut</description>
+sudo nano /etc/default/locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8 Update apt-get sudo apt-get update Install Nginx sudo apt-get install nginx Try http://ip-address to see if nginx loads properly Install MySQL Server sudo apt-get install mysql-server Install PHP Check which version is being installed. The version is required later.
+sudo apt-get install php-fpm php-mysql Install phpmyadmin sudo apt-get install phpmyadmin Do not select any in the first selection for server as we have already installed Nginx In the second option, SELECT yes You will be asked to set password for the database Simply, add password and select enter Create symlink of phpmyadmin with Symlink = Shortcut</description>
     </item>
     
     <item>
       <title>SSH Setup</title>
-      <link>https://example.org/ssh-setup/</link>
+      <link>http://localhost:1313/ssh-setup/</link>
       <pubDate>Sun, 26 Nov 2023 23:48:12 +0545</pubDate>
       
-      <guid>https://example.org/ssh-setup/</guid>
+      <guid>http://localhost:1313/ssh-setup/</guid>
       <description>Copy the public and private key to the .ssh directory cp ~/[filePath]/id_rsa* ~/.ssh/ Setup config file sudo nano ~/.ssh/config Config file configuration Host acme-server HostName 34.231.213.345 User pratik IdentityFile ~/.ssh/id_rsa SSH to the server ssh acme-server </description>
     </item>
     
