@@ -13,11 +13,60 @@
       <pubDate>Sun, 03 Dec 2023 15:02:46 +0545</pubDate>
       
       <guid>http://localhost:1313/posts/docker/</guid>
-      <description>Docker A container platform that allows you to build, test &amp;amp; deploy applications quickly
-Dockerfile A set of instructions for creating an image
-Image A packaged application and its dependencies
-Container A running instance of that image executing the application in an isolated environment
-# Pull docker image from DockerHub docker pull IMAGE_NAME:TAG # Run docker image docker run IMAGE_NAME:TAG docker run ubuntu:latest # Runs container in the background docker run -d node:latest # List all the images docker images # List all the running containers docker ps # List containers including the stopped ones docker ps -a # Run and interact with the container docker run -it node # Build the docker image from docker file # .</description>
+      <description>&lt;h4 id=&#34;docker&#34;&gt;Docker&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A container platform that allows you to build, test &amp;amp; deploy applications quickly&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;dockerfile&#34;&gt;Dockerfile&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A set of instructions for creating an image&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;image&#34;&gt;Image&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A packaged application and its dependencies&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h4 id=&#34;container&#34;&gt;Container&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A running instance of that image executing the application in an isolated environment&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Pull docker image from DockerHub&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker pull IMAGE_NAME:TAG
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# List all the images&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker images
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Run docker image&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run IMAGE_NAME:TAG
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run ubuntu:latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Runs container in the background&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -d node:latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Run and interact with the container&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -it node
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Here,&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# -d mean detached mode : run in the background&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# -p 4000:3000 means map the port 4000 of your host machine&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# to the port 3000 inside the container&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker run -d -p 4000:3000 --name acme-api acme-api:latest
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo docker run -d -p 27017:27017 7ee26c8012da
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# List all the running containers&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker ps
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# List containers including the stopped ones&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;docker ps -a
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Remove docker container&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo docker rm CONTAINER_NAME_or_ID
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Remove all the docker images&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo docker rmi &lt;span style=&#34;color:#66d9ef&#34;&gt;$(&lt;/span&gt;sudo docker images -q&lt;span style=&#34;color:#66d9ef&#34;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;this-is-a-simple-example-of-dockerfile-for-an-express-api&#34;&gt;This is a simple example of Dockerfile for an express API&lt;/h4&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Here, RUN is used to specify commands which runs while the docker image is being built&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -26,7 +75,27 @@ Container A running instance of that image executing the application in an isola
       <pubDate>Sun, 03 Dec 2023 12:07:25 +0545</pubDate>
       
       <guid>http://localhost:1313/posts/regex-cheatsheet/</guid>
-      <description>Regex is used for pattern matching or string matching [abc] a,b or c [^abc] any character except a,b,c [a-z] a to z [A-Z] A to Z [a-zA-Z] a to z, A to Z [0-9] 0 to 9 Quantifiers []? Occurs 0 or 1 times []+ Occurs 1 or more times []* Occurs 0 or more times []{n} Occurs n times []{n,} Occurs n or more times []{y,z} Occurs atleast y times but less than z times Regex Meta Characters \d [0-9] \D [^0-9] \w [a-zA-Z0-9] \W [^\w] \ - tells computer to treat following character as search character.</description>
+      <description>&lt;h4 id=&#34;_regex_-is-used-for-pattern-matching-or-string-matching&#34;&gt;&lt;em&gt;Regex&lt;/em&gt; is used for pattern matching or string matching&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[abc]      a,b or c
+[^abc]     any character except a,b,c
+[a-z]      a to z
+[A-Z]      A to Z
+[a-zA-Z]   a to z, A to Z
+[0-9]      0 to 9
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;quantifiers&#34;&gt;Quantifiers&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[]?     Occurs 0 or 1 times
+[]+     Occurs 1 or more times
+[]*     Occurs 0 or more times
+[]{n}   Occurs n times
+[]{n,}  Occurs n or more times
+[]{y,z} Occurs atleast y times but less than z times
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;regex-meta-characters&#34;&gt;Regex Meta Characters&lt;/h4&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;\d [0-9]
+\D [^0-9]
+\w [a-zA-Z0-9]
+\W [^\w]
+&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
+&lt;p&gt;\ - tells computer to treat following character as search character. e.g. &amp;lsquo;+&amp;rsquo; &amp;lsquo;.&amp;rsquo;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,12 +104,23 @@ Container A running instance of that image executing the application in an isola
       <pubDate>Mon, 27 Nov 2023 21:18:40 +0545</pubDate>
       
       <guid>http://localhost:1313/posts/github-actions/</guid>
-      <description>Setup runner in the server As shown in the figure above, you can find the Runners tab in the Action section of your repository settings, if you have the proper access.
-Select the New self-hosted runner
-Select the Server OS (Most probably linux)
-Run in your terminal (Be sure you are connected to your server)
-IMPORTANT : Skip the following step
-# Last step, run it! $ ./run.sh Instead use (This allows the runner service to start in the background)</description>
+      <description>&lt;h3 id=&#34;setup-runner-in-the-server&#34;&gt;Setup runner in the server&lt;/h3&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/github-runner.png&#34; alt=&#34;Runner section in github&#34;  /&gt;
+&lt;/p&gt;
+&lt;p&gt;As shown in the figure above, you can find the Runners tab in the Action section of your repository settings, if you have the proper access.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Select the New self-hosted runner&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;img loading=&#34;lazy&#34; src=&#34;http://localhost:1313/github-runner2.png&#34; alt=&#34;OS selection in runner section&#34;  /&gt;
+&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Select the Server OS (Most probably linux)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Run in your terminal (Be sure you are connected to your server)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANT&lt;/strong&gt; : Skip the following step&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -49,9 +129,38 @@ IMPORTANT : Skip the following step
       <pubDate>Mon, 27 Nov 2023 12:25:32 +0545</pubDate>
       
       <guid>http://localhost:1313/posts/lemp-stack/</guid>
-      <description>Set locale In /etc/default/locale, set the following
-sudo nano /etc/default/locale LANG=en_US.UTF-8 LANGUAGE=en_US.UTF-8 LC_ALL=en_US.UTF-8 Update apt-get sudo apt-get update Install Nginx sudo apt-get install nginx Try http://ip-address to see if nginx loads properly Install MySQL Server sudo apt-get install mysql-server Install PHP Check which version is being installed. The version is required later.
-sudo apt-get install php-fpm php-mysql Install phpmyadmin sudo apt-get install phpmyadmin Do not select any in the first selection for server as we have already installed Nginx In the second option, SELECT yes You will be asked to set password for the database Simply, add password and select enter Create symlink of phpmyadmin with Symlink = Shortcut</description>
+      <description>&lt;h3 id=&#34;set-locale&#34;&gt;Set locale&lt;/h3&gt;
+&lt;p&gt;In &lt;code&gt;/etc/default/locale&lt;/code&gt;, set the following&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nano /etc/default/locale
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LANG&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;en_US.UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LANGUAGE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;en_US.UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LC_ALL&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;en_US.UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;update-apt-get&#34;&gt;Update apt-get&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;install-nginx&#34;&gt;Install Nginx&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install nginx
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;try-httpip-address-to-see-if-nginx-loads-properly&#34;&gt;Try http://ip-address to see if nginx loads properly&lt;/h4&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;install-mysql-server&#34;&gt;Install MySQL Server&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install mysql-server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;install-php&#34;&gt;Install PHP&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Check which version is being installed. The version is required later.&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install php-fpm php-mysql
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;install-phpmyadmin&#34;&gt;Install phpmyadmin&lt;/h3&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get install phpmyadmin
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ol&gt;
+&lt;li&gt;Do not select any in the first selection for server as we have already installed Nginx&lt;/li&gt;
+&lt;li&gt;In the second option, SELECT yes&lt;/li&gt;
+&lt;li&gt;You will be asked to set password for the database&lt;/li&gt;
+&lt;li&gt;Simply, add password and select enter&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;create-_symlink_-of-phpmyadmin-with&#34;&gt;Create &lt;em&gt;symlink&lt;/em&gt; of phpmyadmin with&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;Symlink = Shortcut&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -60,7 +169,18 @@ sudo apt-get install php-fpm php-mysql Install phpmyadmin sudo apt-get install p
       <pubDate>Sun, 26 Nov 2023 23:48:12 +0545</pubDate>
       
       <guid>http://localhost:1313/ssh-setup/</guid>
-      <description>Copy the public and private key to the .ssh directory cp ~/[filePath]/id_rsa* ~/.ssh/ Setup config file sudo nano ~/.ssh/config Config file configuration Host acme-server HostName 34.231.213.345 User pratik IdentityFile ~/.ssh/id_rsa SSH to the server ssh acme-server </description>
+      <description>&lt;h4 id=&#34;copy-the-public-and-private-key-to-the-ssh-directory&#34;&gt;Copy the public and private key to the .ssh directory&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp ~/&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;filePath&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;/id_rsa* ~/.ssh/
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;setup-config-file&#34;&gt;Setup config file&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nano ~/.ssh/config
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;config-file-configuration&#34;&gt;Config file configuration&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Host acme-server
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    HostName 34.231.213.345
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    User pratik
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    IdentityFile ~/.ssh/id_rsa
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;ssh-to-the-server&#34;&gt;SSH to the server&lt;/h4&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ssh acme-server
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
     </item>
     
   </channel>

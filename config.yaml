@@ -3,10 +3,6 @@ languageCode: en-us
 title: Pratik Amatya
 theme: "PaperMod"
 
-author:
-  name: "Pratik Amatya"
-  homepage: "https://github.com/PratikAmatya"
-
 canonifyURLs: true
 
 tags:
@@ -40,9 +36,13 @@ tags:
   - postgresql
 
 params:
+  author:
+    name: "Pratik Amatya"
+    homepage: "https://github.com/PratikAmatya"
+
   homeInfoParams:
     enabled: true
-    Title: "Hi, I am Pratik \U0001F44B"
+    Title: "Hi, I am Pratik 👋"
     Content: "I am a web application developer proficient in front-end and back-end technologies such as Vue.js, React.js, Node.js, Express.js, and MySQL. I have a keen interest in backend technologies, and I am currently expanding my horizons towards DevOps."
 
   socialIcons:
@@ -84,17 +84,3 @@ outputs:
     - HTML
     - RSS
     - JSON # is necessary
-
-# languages:
-#   en:
-#     languageName: English
-#     weight: 1
-#     # taxonomies:
-#     #   category: categories
-#     #   tag: tags
-#     #   series: series
-#     menu:
-#       main:
-#         - name: SSH Setup
-#           url: ssh-setup
-#           weight: 5
