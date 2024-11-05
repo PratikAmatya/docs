@@ -54,8 +54,6 @@ docker ps -a
 # Remove docker container
 sudo docker rm CONTAINER_NAME_or_ID
 
-# Remove all the docker images
-sudo docker rmi $(sudo docker images -q)
 ```
 
 #### This is a simple example of Dockerfile for an express API
@@ -88,6 +86,16 @@ docker build -t myapp .
 # Lists the built images
 docker images
 
+docker image rm myapp4
+
+docker rmi myapp4
+
+> -f option forces the deletion of image even if the container uses the container
+docker image rm myapp4 -f
+
+# Remove all the docker images
+sudo docker rmi $(sudo docker images -q)
+
 # Run the built image
 docker run myapp
 
@@ -96,7 +104,7 @@ docker run myapp
 > Using this does not expose the port to the host machine
 docker run --name myapp_c1 myapp
 
-> Hence, we use 
+> Hence, we use
 > Here, -d which runs container in the background
 > -p is used to map the port 4000 of your host machine
 sudo docker run --name myapp_c1 -p 3000:3000 -d myapp
@@ -107,5 +115,7 @@ sudo docker stop CONTAINER_NAME_or_ID
 
 # Stops all the containers
 sudo docker stop $(sudo docker ps -q)
+
+sudo docker container rm app_c2
 
 ```
