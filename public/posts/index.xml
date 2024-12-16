@@ -135,14 +135,25 @@
       <pubDate>Mon, 27 Nov 2023 12:25:32 +0545</pubDate>
       
       <guid>http://localhost:1313/posts/lemp-stack/</guid>
-      <description>&lt;p&gt;LEMP is an open-source web application stack used to develop web applications. The term LEMP is an acronym that represents L for the Linux Operating system, Nginx (pronounced as engine-x, hence the E in the acronym) web server, M for MySQL database, and P for PHP scripting language.&lt;/p&gt;
-&lt;p&gt;LEMP Stands For:&lt;/p&gt;
+      <description>&lt;p&gt;LEMP is an open-source web application stack used to develop web applications.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;LEMP&lt;/strong&gt; Stands For:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;L - Linux Operating System
 E - Nginx Server
 M - MySQL Database
 P - PHP
-&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;set-locale&#34;&gt;Set locale&lt;/h3&gt;
-&lt;p&gt;In &lt;code&gt;/etc/default/locale&lt;/code&gt;, set the following (Optional but I have faced issues in the past if this step is not done):&lt;/p&gt;</description>
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;set-locale-optional&#34;&gt;Set locale (Optional)&lt;/h3&gt;
+&lt;p&gt;Setting the locale can prevent potential issues during installation. Open &lt;em&gt;/etc/default/locale&lt;/em&gt; and add the following:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo nano /etc/default/locale
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LANG&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;en_US.UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LANGUAGE&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;en_US.UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LC_ALL&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;en_US.UTF-8
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;update-the-package-list&#34;&gt;Update the Package list&lt;/h3&gt;
+&lt;p&gt;Update your system&amp;rsquo;s package database&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;sudo apt-get update
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;hr&gt;
+&lt;h3 id=&#34;install-nginx&#34;&gt;Install Nginx&lt;/h3&gt;
+&lt;p&gt;Install the Nginx web server:&lt;/p&gt;</description>
     </item>
     
     <item>

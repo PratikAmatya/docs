@@ -51,7 +51,7 @@ sudo apt-get install nginx
 
 _Verify Installation_
 
-## Access your server's IP in a browser (http://your-server-ip) to confirm Nginx is working.
+> Access your server's IP in a browser (http://your-server-ip) to confirm Nginx is working.
 
 ### Install MySQL Server
 
@@ -80,7 +80,7 @@ sudo apt-get install php-fpm php-mysql
 - Explanation:
   - php-fpm: Stands for PHP FastCGI Process Manager. This is a version of PHP designed to work efficiently with Nginx.
     Nginx doesn’t process PHP directly, so php-fpm acts as a bridge to handle PHP scripts.
-    php-mysql: A PHP module that allows PHP to interact with MySQL databases.
+  - php-mysql: A PHP module that allows PHP to interact with MySQL databases.
     Check Version: Before running this command, you might check the PHP version with **php -v** if PHP is already installed, to avoid conflicts or ensure compatibility.
 
 ---
@@ -93,8 +93,11 @@ sudo apt-get install phpmyadmin
 
 1. Do not select any in the first selection for server as we have already installed Nginx
 2. In the second option, SELECT yes
+   ![Configuration of PHPMyAdmin](/lemp-stack-2.png)
 3. You will be asked to set password for the database
-4. Simply, add password and select enter
+   ![Setting password for PHPMyAdmin](/lemp-stack-3.png)
+4. You will be asked to confirm the password
+   ![Confirming password for PHPMyAdmin](/lemp-stack-4.png)
 
 ---
 
@@ -111,6 +114,8 @@ sudo ln -s /usr/share/phpmyadmin /var/www/html
 ---
 
 **NOTE: Change nginx sites-available for php and phpmyadmin**
+
+- We need to edit the default config for nginx by using the following commands:
 
 ```bash
 sudo nano /etc/nginx/sites-available/default
@@ -159,6 +164,9 @@ fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
 
 ```
 
+After all the steps are completed, it should look something like this:
+![Final version of default config for NGINX](/lemp-stack-1.png)
+
 ### Test the file configuration
 
 ```bash
@@ -186,7 +194,7 @@ sudo mysql --user=root mysql
 CREATE USER 'admin'@'localhost' IDENTIFIED BY '[PASSWORD]';
 ```
 
-> For connecting to the database from other server, use % when creating the user (This may cause error)
+> For connecting to the database from other server, use % when creating the user (This may cause error and is optional)
 
 ```mysql
 CREATE USER 'admin'@'%' IDENTIFIED BY '[PASSWORD]'
@@ -228,7 +236,7 @@ sudo swapon /var/swap.img
 
 ---
 
-### Installing Nodejs
+### Installing Node.js
 
 Here, I have listed the installation of Node.js using NVM.
 
@@ -279,14 +287,20 @@ nvm install v20.14.0
 
 We can also install a release based on these aliases as well. For example, to install LTS version with alias **iron**, we run:
 
-```
+```bash
 nvm install lts/iron
 ```
 
-We can easily switch between the installed version of node using the following command (This is why I like the NVM installation method):
+We can easily switch between the installed version of node using the following command (This is why I suggest the use of the NVM installation method):
 
-```
+```bash
 nvm use v14.10.0
+```
+
+or
+
+```bash
+nvm use lts/iron
 ```
 
 ---
