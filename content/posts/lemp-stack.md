@@ -153,7 +153,7 @@ fastcgi_pass unix:/var/run/php/php7.4-fpm.sock;
 
 ```bash
 # Add index.php to the list if you are using PHP
- index index.html index.htm index.nginx-debian.html
+ index index.html index.htm index.nginx-debian.html;
 ```
 
 > **After**
