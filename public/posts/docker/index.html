@@ -26,9 +26,12 @@ A running instance of that image executing the application in an isolated enviro
 # Pull docker image from DockerHub
 docker pull IMAGE_NAME:TAG
 
+<<<<<<< HEAD
 # List all the images
 docker images
 
+=======
+>>>>>>> main
 # Run docker image
 docker run IMAGE_NAME:TAG
 docker run ubuntu:latest
@@ -36,9 +39,29 @@ docker run ubuntu:latest
 # Runs container in the background
 docker run -d node:latest
 
+<<<<<<< HEAD
 # Run and interact with the container
 docker run -it node
 
+=======
+# List all the images
+docker images
+
+# List all the running containers
+docker ps
+
+# List containers including the stopped ones
+docker ps -a
+
+# Run and interact with the container
+docker run -it node
+
+# Build the docker image from docker file
+# . specifies the relative path to the docker file form the terminal
+docker build -t TAGNAME .
+docker build -t myapp .
+
+>>>>>>> main
 # Here,
 # -d mean detached mode : run in the background
 # -p 4000:3000 means map the port 4000 of your host machine
@@ -47,6 +70,7 @@ docker run -d -p 4000:3000 --name acme-api acme-api:latest
 
 sudo docker run -d -p 27017:27017 7ee26c8012da
 
+<<<<<<< HEAD
 # List all the running containers
 docker ps
 
@@ -62,6 +86,18 @@ This is a simple example of Dockerfile for an express API
 
 Here, RUN is used to specify commands which runs while the docker image is being built">
 <meta name="author" content="map[homepage:https://github.com/PratikAmatya name:Pratik Amatya]">
+=======
+# Stop docker container
+sudo docker stop CONTAINER_NAME_or_ID
+
+# Stops all the containers
+sudo docker stop $(sudo docker ps -q)
+
+# Remove docker container
+sudo docker rm CONTAINER_NAME_or_ID
+">
+<meta name="author" content="">
+>>>>>>> main
 <link rel="canonical" href="http://localhost:1313/posts/docker/">
 <link crossorigin="anonymous" href="http://localhost:1313/assets/css/stylesheet.5cfc680b1eeaeef9efbced92d46c2a9e876b72ee14fba85846afc4cff9e6e6f8.css" integrity="sha256-XPxoCx7q7vnvvO2S1Gwqnodrcu4U&#43;6hYRq/Ez/nm5vg=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="http://localhost:1313/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
@@ -166,7 +202,11 @@ Here, RUN is used to specify commands which runs while the docker image is being
     <h1 class="post-title">
       Docker (WIP)
     </h1>
+<<<<<<< HEAD
     <div class="post-meta"><span title='2023-12-03 15:02:46 +0545 +0545'>December 3, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;365 words&nbsp;·&nbsp;map[homepage:https://github.com/PratikAmatya name:Pratik Amatya]
+=======
+    <div class="post-meta"><span title='2023-12-03 15:02:46 +0545 +0545'>December 3, 2023</span>&nbsp;·&nbsp;2 min&nbsp;·&nbsp;215 words
+>>>>>>> main
 
 </div>
   </header> 
@@ -210,6 +250,7 @@ Here, RUN is used to specify commands which runs while the docker image is being
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>sudo docker run -d -p 27017:27017 7ee26c8012da
 </span></span><span style="display:flex;"><span>
+<<<<<<< HEAD
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># List all the running containers</span>
 </span></span><span style="display:flex;"><span>docker ps
 </span></span><span style="display:flex;"><span>
@@ -260,6 +301,8 @@ Here, RUN is used to specify commands which runs while the docker image is being
 </span></span><span style="display:flex;"><span>sudo docker run --name myapp_c1 -p 3000:3000 -d myapp
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>sudo docker run -d -p 27017:27017 7ee26c8012da
+=======
+>>>>>>> main
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Stop docker container</span>
 </span></span><span style="display:flex;"><span>sudo docker stop CONTAINER_NAME_or_ID
 </span></span><span style="display:flex;"><span>
