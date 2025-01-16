@@ -308,7 +308,7 @@ nvm use lts/iron
 ### Install PM2
 
 ```bash
-sudo npm install pm2@latest -g
+npm install pm2@latest -g
 ```
 
 ---
