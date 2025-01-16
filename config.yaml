@@ -3,15 +3,12 @@ languageCode: en-us
 title: Pratik Amatya
 theme: "PaperMod"
 
-<<<<<<< HEAD
-=======
 params:
   author:
     name: "Pratik Amatya"
     homepage: "https://github.com/PratikAmatya"
 
 
->>>>>>> main
 canonifyURLs: true
 
 tags:
