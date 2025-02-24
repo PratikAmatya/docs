@@ -3,7 +3,7 @@ baseURL = 'https://pratikamatya.github.io/docs/'
 anguageCode = "en-us"
 title = "Pratik Amatya"
 theme = 'hugo-papermod'
-canonifyURLs = false
+canonifyURLs = true
 relativeURLs = true
 publishDir = "docs"
 
