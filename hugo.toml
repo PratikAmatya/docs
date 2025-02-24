@@ -1,5 +1,4 @@
-
-baseURL = 'https://pratikamatya.github.io/'
+baseURL = 'https://pratikamatya.github.io/docs/'
 anguageCode = "en-us"
 title = "Pratik Amatya"
 theme = 'hugo-papermod'
