@@ -3,7 +3,9 @@ baseURL = 'https://pratikamatya.github.io/docs/'
 anguageCode = "en-us"
 title = "Pratik Amatya"
 theme = 'hugo-papermod'
-canonifyURLs = true
+canonifyURLs = false
+relativeURLs = true
+
 
 [params]
   DateFormat = "January 2, 2006"

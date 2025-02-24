@@ -28,7 +28,7 @@ Install Nginx
 Install the Nginx web server:">
 <meta name="author" content="map[homepage:https://github.com/PratikAmatya name:Pratik Amatya]">
 <link rel="canonical" href="https://pratikamatya.github.io/docs/posts/lemp-stack/">
-<link crossorigin="anonymous" href="https://pratikamatya.github.io/docs/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
+<link crossorigin="anonymous" href="../../docs/assets/css/stylesheet.45e028aa8ce0961349adf411b013ee39406be2c0bc80d4ea3fc04555f7f4611a.css" integrity="sha256-ReAoqozglhNJrfQRsBPuOUBr4sC8gNTqP8BFVff0YRo=" rel="preload stylesheet" as="style">
 <link rel="icon" href="https://pratikamatya.github.io/docs/favicon.ico">
 <link rel="icon" type="image/png" sizes="16x16" href="https://pratikamatya.github.io/docs/favicon-16x16.png">
 <link rel="icon" type="image/png" sizes="32x32" href="https://pratikamatya.github.io/docs/favicon-32x32.png">
@@ -272,11 +272,11 @@ Check Version: Before running this command, you might check the PHP version with
 </span></span></code></pre></div><ol>
 <li>Do not select any in the first selection for server as we have already installed Nginx</li>
 <li>In the second option, SELECT yes
-<img alt="Configuration of PHPMyAdmin" loading="lazy" src="https://pratikamatya.github.io/docs/lemp-stack-2.png"></li>
+<img alt="Configuration of PHPMyAdmin" loading="lazy" src="../../lemp-stack-2.png"></li>
 <li>You will be asked to set password for the database
-<img alt="Setting password for PHPMyAdmin" loading="lazy" src="https://pratikamatya.github.io/docs/lemp-stack-3.png"></li>
+<img alt="Setting password for PHPMyAdmin" loading="lazy" src="../../lemp-stack-3.png"></li>
 <li>You will be asked to confirm the password
-<img alt="Confirming password for PHPMyAdmin" loading="lazy" src="https://pratikamatya.github.io/docs/lemp-stack-4.png"></li>
+<img alt="Confirming password for PHPMyAdmin" loading="lazy" src="../../lemp-stack-4.png"></li>
 </ol>
 <hr>
 <h3 id="create-symlink-of-phpmyadmin-with">Create <em>symlink</em> of phpmyadmin with<a hidden class="anchor" aria-hidden="true" href="#create-symlink-of-phpmyadmin-with">#</a></h3>
@@ -310,7 +310,7 @@ Check Version: Before running this command, you might check the PHP version with
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># Add index.php to the list if you are using PHP</span>
 </span></span><span style="display:flex;"><span> index index.html index.htm index.nginx-debian.html index.php;
 </span></span></code></pre></div><p>After all the steps are completed, it should look something like this:
-<img alt="Final version of default config for NGINX" loading="lazy" src="https://pratikamatya.github.io/docs/lemp-stack-1.png"></p>
+<img alt="Final version of default config for NGINX" loading="lazy" src="../../lemp-stack-1.png"></p>
 <h3 id="test-the-file-configuration">Test the file configuration<a hidden class="anchor" aria-hidden="true" href="#test-the-file-configuration">#</a></h3>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo nginx -t
 </span></span></code></pre></div><h3 id="reloading-the-nginx-with-given-changes">Reloading the Nginx with given changes<a hidden class="anchor" aria-hidden="true" href="#reloading-the-nginx-with-given-changes">#</a></h3>

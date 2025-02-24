@@ -160,11 +160,11 @@
       <pubDate>Mon, 27 Nov 2023 21:18:40 +0545</pubDate>
       <guid>https://pratikamatya.github.io/docs/posts/github-actions/</guid>
       <description>&lt;h3 id=&#34;setup-runner-in-the-server&#34;&gt;Setup runner in the server&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;Runner section in github&#34; loading=&#34;lazy&#34; src=&#34;https://pratikamatya.github.io/docs/github-runner.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Runner section in github&#34; loading=&#34;lazy&#34; src=&#34;./github-runner.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As shown in the figure above, you can find the Runners tab in the Action section of your repository settings, if you have the proper access.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Select the New self-hosted runner&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt=&#34;OS selection in runner section&#34; loading=&#34;lazy&#34; src=&#34;https://pratikamatya.github.io/docs/github-runner2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;OS selection in runner section&#34; loading=&#34;lazy&#34; src=&#34;./github-runner2.png&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Select the Server OS (Most probably linux)&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
