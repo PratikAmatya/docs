@@ -1,11 +1,15 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'Pratik Amatya'
-theme = 'papermod'
+baseURL = 'https://pratikamatya.github.io/docs/'
+anguageCode = "en-us"
+title = "Pratik Amatya"
+theme = 'hugo-papermod'
+canonifyURLs = true
+relativeURLs = true
+publishDir = "docs"
+
 
 [params]
   DateFormat = "January 2, 2006"
-  defaultTheme = "auto"
+  defaultTheme = "auto" # Options: dark, light
   disableThemeToggle = false
   defaultContentOrder = "weight"
   defaultContentSort = "asc"
