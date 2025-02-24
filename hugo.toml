@@ -51,6 +51,3 @@ canonifyURLs = true
   [[params.socialIcons]]
     name = "CV"
     url = "https://drive.google.com/file/d/1HX8XyTbrgb3tTY6CkTh9lTEOFsZBYbMG/view?usp=sharing"
-
-[outputs]
-  home = ["HTML", "RSS", "JSON"]
