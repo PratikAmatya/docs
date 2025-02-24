@@ -5,6 +5,7 @@ title = "Pratik Amatya"
 theme = 'hugo-papermod'
 canonifyURLs = false
 relativeURLs = true
+publishDir = "docs"
 
 
 [params]
