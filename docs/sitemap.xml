@@ -2,32 +2,32 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/posts/nginx-config/</loc>
+    <loc>http://localhost:1313/docs/posts/nginx-config/</loc>
     <lastmod>2025-02-10T12:25:32+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/</loc>
+    <loc>http://localhost:1313/docs/posts/</loc>
     <lastmod>2025-02-10T12:25:32+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1313/docs/</loc>
     <lastmod>2025-02-10T12:25:32+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/docker/</loc>
+    <loc>http://localhost:1313/docs/posts/docker/</loc>
     <lastmod>2023-12-03T15:02:46+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/regex-cheatsheet/</loc>
+    <loc>http://localhost:1313/docs/posts/regex-cheatsheet/</loc>
     <lastmod>2023-12-03T12:07:25+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/github-actions/</loc>
+    <loc>http://localhost:1313/docs/posts/github-actions/</loc>
     <lastmod>2023-11-27T21:18:40+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/lemp-stack/</loc>
+    <loc>http://localhost:1313/docs/posts/lemp-stack/</loc>
     <lastmod>2023-11-27T12:25:32+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/ssh-setup/</loc>
+    <loc>http://localhost:1313/docs/ssh-setup/</loc>
     <lastmod>2023-11-26T23:48:12+05:45</lastmod>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1313/docs/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1313/docs/tags/</loc>
   </url>
 </urlset>

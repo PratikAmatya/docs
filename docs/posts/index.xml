@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Pratik Amatya</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:1313/docs/posts/</link>
     <description>Recent content in Posts on Pratik Amatya</description>
     <generator>Hugo -- 0.144.1</generator>
-    <language>en</language>
+    <language>en-us</language>
     <lastBuildDate>Mon, 10 Feb 2025 12:25:32 +0545</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/docs/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Nginx Sample Configs</title>
-      <link>http://localhost:1313/posts/nginx-config/</link>
+      <link>http://localhost:1313/docs/posts/nginx-config/</link>
       <pubDate>Mon, 10 Feb 2025 12:25:32 +0545</pubDate>
-      <guid>http://localhost:1313/posts/nginx-config/</guid>
+      <guid>http://localhost:1313/docs/posts/nginx-config/</guid>
       <description>&lt;h3 id=&#34;frontend-nginx-sample-config&#34;&gt;Frontend Nginx Sample Config&lt;/h3&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-nginx&#34; data-lang=&#34;nginx&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;server&lt;/span&gt; {
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
@@ -105,9 +105,9 @@
     </item>
     <item>
       <title>Docker</title>
-      <link>http://localhost:1313/posts/docker/</link>
+      <link>http://localhost:1313/docs/posts/docker/</link>
       <pubDate>Sun, 03 Dec 2023 15:02:46 +0545</pubDate>
-      <guid>http://localhost:1313/posts/docker/</guid>
+      <guid>http://localhost:1313/docs/posts/docker/</guid>
       <description>&lt;h4 id=&#34;docker&#34;&gt;Docker&lt;/h4&gt;
 &lt;blockquote&gt;
 &lt;p&gt;A container platform that allows you to build, test &amp;amp; deploy applications quickly&lt;/p&gt;&lt;/blockquote&gt;
@@ -129,9 +129,9 @@
     </item>
     <item>
       <title>Regex Cheatsheet</title>
-      <link>http://localhost:1313/posts/regex-cheatsheet/</link>
+      <link>http://localhost:1313/docs/posts/regex-cheatsheet/</link>
       <pubDate>Sun, 03 Dec 2023 12:07:25 +0545</pubDate>
-      <guid>http://localhost:1313/posts/regex-cheatsheet/</guid>
+      <guid>http://localhost:1313/docs/posts/regex-cheatsheet/</guid>
       <description>&lt;h4 id=&#34;regex-is-used-for-pattern-matching-or-string-matching&#34;&gt;&lt;em&gt;Regex&lt;/em&gt; is used for pattern matching or string matching&lt;/h4&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[abc]      a,b or c
 [^abc]     any character except a,b,c
@@ -156,15 +156,15 @@
     </item>
     <item>
       <title>Github Actions</title>
-      <link>http://localhost:1313/posts/github-actions/</link>
+      <link>http://localhost:1313/docs/posts/github-actions/</link>
       <pubDate>Mon, 27 Nov 2023 21:18:40 +0545</pubDate>
-      <guid>http://localhost:1313/posts/github-actions/</guid>
+      <guid>http://localhost:1313/docs/posts/github-actions/</guid>
       <description>&lt;h3 id=&#34;setup-runner-in-the-server&#34;&gt;Setup runner in the server&lt;/h3&gt;
-&lt;p&gt;&lt;img alt=&#34;Runner section in github&#34; loading=&#34;lazy&#34; src=&#34;../github-runner.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;Runner section in github&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/docs/github-runner.png&#34;&gt;&lt;/p&gt;
 &lt;p&gt;As shown in the figure above, you can find the Runners tab in the Action section of your repository settings, if you have the proper access.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Select the New self-hosted runner&lt;/p&gt;&lt;/blockquote&gt;
-&lt;p&gt;&lt;img alt=&#34;OS selection in runner section&#34; loading=&#34;lazy&#34; src=&#34;../github-runner2.png&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;OS selection in runner section&#34; loading=&#34;lazy&#34; src=&#34;http://localhost:1313/docs/github-runner2.png&#34;&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Select the Server OS (Most probably linux)&lt;/p&gt;&lt;/blockquote&gt;
 &lt;blockquote&gt;
@@ -174,9 +174,9 @@
     </item>
     <item>
       <title>LEMP Stack</title>
-      <link>http://localhost:1313/posts/lemp-stack/</link>
+      <link>http://localhost:1313/docs/posts/lemp-stack/</link>
       <pubDate>Mon, 27 Nov 2023 12:25:32 +0545</pubDate>
-      <guid>http://localhost:1313/posts/lemp-stack/</guid>
+      <guid>http://localhost:1313/docs/posts/lemp-stack/</guid>
       <description>&lt;p&gt;LEMP is an open-source web application stack used to develop web applications.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;LEMP&lt;/strong&gt; Stands For:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;L - Linux Operating System
@@ -199,9 +199,9 @@ P - PHP
     </item>
     <item>
       <title>SSH Setup</title>
-      <link>http://localhost:1313/ssh-setup/</link>
+      <link>http://localhost:1313/docs/ssh-setup/</link>
       <pubDate>Sun, 26 Nov 2023 23:48:12 +0545</pubDate>
-      <guid>http://localhost:1313/ssh-setup/</guid>
+      <guid>http://localhost:1313/docs/ssh-setup/</guid>
       <description>&lt;h4 id=&#34;copy-the-public-and-private-key-to-the-ssh-directory&#34;&gt;Copy the public and private key to the .ssh directory&lt;/h4&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;cp ~/&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;filePath&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;/id_rsa* ~/.ssh/
 &lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h4 id=&#34;setup-config-file&#34;&gt;Setup config file&lt;/h4&gt;

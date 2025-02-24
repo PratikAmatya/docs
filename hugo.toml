@@ -1,11 +1,8 @@
 baseURL = 'https://pratikamatya.github.io/docs/'
-anguageCode = "en-us"
+languageCode = "en-us"
 title = "Pratik Amatya"
 theme = 'hugo-papermod'
 canonifyURLs = true
-relativeURLs = true
-publishDir = "docs"
-
 
 [params]
   DateFormat = "January 2, 2006"
